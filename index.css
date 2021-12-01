@@ -1,0 +1,145 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+}
+
+h1{
+    color: black;
+    text-align: center;
+    font-size: 40px;
+    color: black;
+}
+
+header{
+    width: 100%;
+    padding: 15px;
+}
+
+header{
+    background-color: #cd3545;
+}
+
+nav{
+    background-color: rgba(0, 0, 0, 0.918);
+    margin-left: -100%;
+    width: 100%;
+    overflow: hidden;
+    height: 0;
+    transition: all 0.5s;
+}
+
+.menu1, .submenu{
+    list-style: none;
+}
+
+.menu{
+    padding: 10px;
+    font-size: 18px;
+    color: black;
+    cursor: pointer;
+    background-color: #cd3544d2;
+}
+
+.menu1_items{
+    padding: 10px;
+}
+
+.menu1{
+    padding: 10px;
+    margin-left: -100%;
+    transition: all 0.5s;
+}
+
+.menu1_links{
+    color: white;
+    font-size: 18px;
+    padding: 10px;
+}
+
+.submenu{
+    padding-left: 10px;
+    height: 0;
+    overflow: hidden;
+    transition: all 0.5s;
+}
+
+.img_all{
+    height: 100px;
+}
+
+.img_all, h2{
+    align-self: center;
+}
+
+.deportes{
+    border-style: solid;
+    border-color: #cd3545;
+    padding: 5px;
+    margin: 10px;
+    text-align: center;
+}
+
+.fab{
+    width: 100%;
+    padding: 10px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+footer{
+    padding: 10px;
+}
+
+p{
+    font-family: 'Raleway', sans-serif;
+    font-family: 'Zen Antique', serif;
+}
+
+.mostrar{
+    margin-left: 0;
+    height: 200px;
+}
+
+@media (min-width: 768px){
+    .menu{
+        display: none;
+    }
+    nav{
+        margin-left: 0;
+        overflow: visible;
+        height: auto;
+    }
+    nav .container-submenu:hover{
+        height: 210px;
+    }
+    .menu1{
+        margin-left: 0;
+        display: flex;
+    }
+    .container-submenu{
+        position: relative;
+    }
+    .container-submenu:hover{
+        width: 150px;
+    }
+    .submenu{
+        position: absolute;
+        overflow: visible;
+        top: 40px;
+        opacity: 0;
+        visibility: hidden;
+    }
+    .container-submenu:hover .submenu{
+        opacity: 1;
+        visibility: visible;
+    }
+    .menu1_links:hover{
+        background-color: #cd3545;
+    }
+}
+
