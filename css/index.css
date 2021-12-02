@@ -33,6 +33,10 @@ nav{
     transition: all 0.5s;
 }
 
+.redes{
+    color: black;
+}
+
 .menu1, .submenu{
     list-style: none;
 }
